@@ -16,7 +16,7 @@ public class WebsitePagination {
 
 
         scanner = new Scanner(System.in);
-        System.out.println("Write number of items");
+        System.out.print("Write number of items: ");
         int numberOfItems = scanner.nextInt();
 
 
@@ -46,7 +46,7 @@ public class WebsitePagination {
         sortSecondArray(sortOrder, itemsByParameter);
 
 
-        System.out.println("Write items per page(1-20): ");
+        System.out.print("Write items per page(1-20): ");
         itemsPerPage = scanner.nextInt();
 
         System.out.print("Write page number(starts from 0): ");
@@ -73,7 +73,7 @@ public class WebsitePagination {
             items[i][2] = Integer.toString(price);
 
             if (i == numberOfItems - 1) {
-                System.out.printf("No more items ot add !");
+                System.out.println("No more items ot add!");
             }
         }
     }
