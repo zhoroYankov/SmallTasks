@@ -15,7 +15,6 @@ public class BubbleSort {
                     swapper = numbers[j];
                     numbers[j] = numbers[i];
                     numbers[i] = swapper;
-
                 }
             }
         }

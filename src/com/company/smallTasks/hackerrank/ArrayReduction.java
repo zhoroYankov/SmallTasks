@@ -24,7 +24,7 @@ public class ArrayReduction {
 
         insertNumbersInArray(num);
 
-        System.out.println("Total cost is: " +totalCost(num));
+        System.out.println("Total cost is: " + totalCost(num));
 
 
     }
@@ -43,10 +43,10 @@ public class ArrayReduction {
     }
 
 
-    public static int totalCost(int[] num){
+    public static int totalCost(int[] num) {
         int cost = 0;
-        for (int i=1; i<num.length; i++) {
-            num[i] += num[i-1];
+        for (int i = 1; i < num.length; i++) {
+            num[i] += num[i - 1];
             cost += num[i];
         }
         return cost;
